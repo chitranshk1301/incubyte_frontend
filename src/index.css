@@ -1,13 +1,284 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.home{
+  font-size: 30px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+li{
+  font-size: 20px;
+} 
+
+.body {
+  display: flex;
+  align-items: center;
+}
+
+.main {
+  background-color: rgb(179, 229, 229);
+  box-shadow: 10px 0px 10px white;
+  display: flex;
+  flex-direction: column;
+}
+
+.div1 {
+  display: flex;
+  justify-content: center;
+}
+
+.bg-img {
+  width: 70%;
+  margin-top: -70px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.bg-img img {
+  width: 400px;
+  height: 200px;
+}
+
+.div2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box1 {
+  position: relative;
+  bottom: -350px;
+}
+
+.box1 img {
+  height: 300px;
+  width: 100px;
+}
+
+.t1,
+.t2 {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.t2 {
+  color: blue;
+}
+
+.text2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text2 span {
+  font-size: 30px;
+}
+
+.text2 img {
+  width: 500px;
+  height: 500px;
+}
+
+.box3 img {
+  width: 100px;
+  height: 400px;
+}
+
+.about-us-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+}
+
+.about-us {
+  margin: 50px 0px;
+  width: 70%;
+}
+
+.about-us h1 {
+  font-size: 50px;
+  color: white;
+}
+
+.about-us span {
+  font-size: 30px;
+  color: white;
+}
+
+.our-expertice-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-expertice {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-expertice-heading {
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  color: blue;
+}
+
+.boxes {
+  margin: 50px 0px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.boxes-box {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid white;
+  background-color: rgb(88, 165, 216);
+  padding: 10px;
+  box-shadow: 0px 0px 5px black;
+}
+
+.boxes-box span {
+  font-size: 20px;
+}
+
+.success-story-div {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(93, 93, 163);
+}
+
+.success-story {
+  height: auto;
+  width: 90%;
+  border-bottom-left-radius: 300px;
+  border-bottom-right-radius: 300px;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.story {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.success-story-heading {
+  font-size: 50px;
+  color: white;
+}
+
+.story-text {
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+  margin: 20px 0px;
+}
+
+
+.scale-up-div {
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(185, 213, 231);
+}
+
+.scale-up {
+  width: 90%;
+  display: flex;
+  gap: 30px;
+  margin: 20px 0px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.scale-up-text {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.scale-up-para {
+  font-size: 20px;
+}
+
+.comp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inc-text {
+  font-size: 20px;
+  margin: 20px 0px;
+}
+
+@media screen and (max-width:768px) {
+
+  .text1{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .bg-img img {
+      width: auto;
+  }
+
+  .box1 img {
+      display: none;
+  }
+
+  .box3 img {
+      display: none;
+  }
+
+  .boxes-box {
+      height: auto;
+  }
+
+}
+
+@media screen and (max-width: 524px) {
+
+  .t1,.t2{
+      font-size: 50px;
+  }
+
+  .text2 span{
+      font-size: 20px;
+      text-align: center;
+      word-wrap: break-word;
+  }
+
+  .text2 img{
+      width: 90%;
+      height: 90%;
+  }
+
+  .bg-img img {
+      display: none;
+  }
 }
